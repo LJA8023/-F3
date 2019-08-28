@@ -4,9 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
 public class menuUIControler : MonoBehaviour
 {
-    
+    public AudioSource myAudio;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,5 +26,9 @@ public class menuUIControler : MonoBehaviour
     public void Exit_Click()
     {
         UnityEditor.EditorApplication.isPlaying = false;
+    }
+    public void vol(float v)
+    {
+        myAudio.volume = v;
     }
 }
