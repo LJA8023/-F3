@@ -4,10 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class menuUIControler : MonoBehaviour
+public class menuManager : MonoBehaviour
 {
-    
     // Start is called before the first frame update
+    public void Back_Click()
+    {
+        SceneManager.LoadScene("LJA");
+    }
     void Start()
     {
         
@@ -17,13 +20,5 @@ public class menuUIControler : MonoBehaviour
     void Update()
     {
         
-    }
-    public void Play_Click()
-    {
-        SceneManager.LoadScene("Menu");
-    }
-    public void Exit_Click()
-    {
-        UnityEditor.EditorApplication.isPlaying = false;
     }
 }
