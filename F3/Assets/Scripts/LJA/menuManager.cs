@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class menuManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    public void Back_Click()
+    public void Home_Click()
     {
         SceneManager.LoadScene("LJA");
     }
