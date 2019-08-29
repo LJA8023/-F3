@@ -12,6 +12,7 @@ public class menuUIControler : MonoBehaviour
     public AudioSource myAudio;
     public Animator panel_shezhimianban;
     
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +37,7 @@ public class menuUIControler : MonoBehaviour
     {
         myAudio.volume = v;
         tog_Sound.isOn = v == 0 ? true : false;
+
     }
     public void Settings_Click()
     {
