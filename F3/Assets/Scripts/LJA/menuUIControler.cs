@@ -47,5 +47,6 @@ public class menuUIControler : MonoBehaviour
     {
        // GameObject.FindGameObjectWithTag("panel_menu").SetActive(true);
         panel_shezhimianban.SetBool("SlideIn", false);
+
     }
 }
