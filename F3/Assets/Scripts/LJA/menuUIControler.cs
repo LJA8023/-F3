@@ -33,4 +33,8 @@ public class menuUIControler : MonoBehaviour
         myAudio.volume = v;
         tog_Sound.isOn = v == 0 ? true : false;
     }
+    public void Settings_Click()
+    {
+        GameObject.FindGameObjectsWithTag("panel_menu");
+    }
 }
