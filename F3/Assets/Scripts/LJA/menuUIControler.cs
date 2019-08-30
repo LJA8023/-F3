@@ -7,8 +7,12 @@ using UnityEngine.UI;
 
 public class menuUIControler : MonoBehaviour
 {
+    
     public Toggle tog_Sound = null;
     public AudioSource myAudio;
+    public Animator panel_shezhimianban;
+    
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +22,7 @@ public class menuUIControler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         
     }
     public void Play_Click()
@@ -32,5 +37,18 @@ public class menuUIControler : MonoBehaviour
     {
         myAudio.volume = v;
         tog_Sound.isOn = v == 0 ? true : false;
+
+    }
+    public void Settings_Click()
+    {
+        GameObject.FindGameObjectWithTag("panel_menu").SetActive(false);
+        panel_shezhimianban.enabled = true;
+        panel_shezhimianban.SetBool("SlideIn", true);
+    }
+    public void exit_Click()
+    {
+        //GameObject.FindGameObjectWithTag("panel_menu").SetActive(true);
+        panel_shezhimianban.SetBool("SlideIn", false);
+
     }
 }
