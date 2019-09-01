@@ -11,6 +11,10 @@ TagManager:
   - left
   - right
   - fanxiangqi
+  - huoqiu
+  - bianfu
+  - daodan
+  - bianfujump
   layers:
   - Default
   - TransparentFX
