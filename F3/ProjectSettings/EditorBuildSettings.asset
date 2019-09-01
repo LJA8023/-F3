@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LJA.unity
     guid: 77df61dbd0b300541a95c1f3cf934c45
+  - enabled: 1
+    path: Assets/Scenes/LJA2.0.unity
+    guid: 9dcbc4943ffa5ec4092dba4acf6f000c
   m_configObjects: {}

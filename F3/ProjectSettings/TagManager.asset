@@ -11,6 +11,9 @@ TagManager:
   - left
   - right
   - fanxiangqi
+  - panel_menu
+  - slider_sound
+  - water
   layers:
   - Default
   - TransparentFX
