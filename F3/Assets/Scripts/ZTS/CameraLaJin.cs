@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraLaJin : MonoBehaviour
 {
 
-    public Camera camera;
+    public Camera cameras;
 
     public float endSize = 0;
 
@@ -21,11 +21,11 @@ public class CameraLaJin : MonoBehaviour
     {
         if (isCanLaJin)
         {
-            camera.orthographicSize -= Time.deltaTime;
-            if (camera.orthographicSize <= endSize)
+            cameras.orthographicSize -= Time.deltaTime;
+            if (cameras.orthographicSize <= endSize)
             {
                 isCanLaJin = false;
-                camera.orthographicSize = endSize;
+                cameras.orthographicSize = endSize;
             }
         }
        
