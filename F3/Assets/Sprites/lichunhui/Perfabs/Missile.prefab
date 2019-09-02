@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 3898656804737338020}
   m_Layer: 0
   m_Name: Missile
-  m_TagString: Untagged
+  m_TagString: daodan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
