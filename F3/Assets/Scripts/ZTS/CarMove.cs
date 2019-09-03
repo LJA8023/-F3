@@ -17,8 +17,7 @@ public class CarMove : MonoBehaviour
     {
         if (isCanMove)
         {
-            gameObject.transform.Translate(Vector3.right * Time.deltaTime * MoveSpeed);
+            gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.right * MoveSpeed;
         }
-       
     }
 }
