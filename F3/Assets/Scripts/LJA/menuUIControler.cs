@@ -12,11 +12,14 @@ public class menuUIControler : MonoBehaviour
     public AudioSource myAudio;
     public Animator panel_shezhimianban;
     
+    public GameObject panel_menu;
+    //public GameObject panel_menu;
     
     // Start is called before the first frame update
     void Start()
     {
         
+
     }
 
     // Update is called once per frame
@@ -41,13 +44,14 @@ public class menuUIControler : MonoBehaviour
     }
     public void Settings_Click()
     {
-        GameObject.FindGameObjectWithTag("panel_menu").SetActive(false);
+       panel_menu.SetActive(false);
         panel_shezhimianban.enabled = true;
         panel_shezhimianban.SetBool("SlideIn", true);
     }
     public void exit_Click()
     {
-        //GameObject.FindGameObjectWithTag("panel_menu").SetActive(true);
+
+        panel_menu.SetActive(true);
         panel_shezhimianban.SetBool("SlideIn", false);
 
     }
