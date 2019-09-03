@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CarMove : MonoBehaviour
 {
+    public static bool isCanMove = false;
     public float MoveSpeed = 10;
     // Start is called before the first frame update
     void Start()
@@ -14,6 +15,10 @@ public class CarMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameObject.transform.Translate(Vector3.right * Time.deltaTime * MoveSpeed);
+        if (isCanMove)
+        {
+            gameObject.transform.Translate(Vector3.right * Time.deltaTime * MoveSpeed);
+        }
+       
     }
 }
