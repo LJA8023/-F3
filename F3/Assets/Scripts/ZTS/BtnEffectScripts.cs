@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class BtnEffectScripts : MonoBehaviour
 {
     public GameObject imgeffect;
-    // Start is called before the first frame update
     void Start()
     {
         imgeffect.SetActive(false);
