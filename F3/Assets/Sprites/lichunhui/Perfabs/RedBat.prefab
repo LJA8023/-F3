@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4671449148482649863}
   - component: {fileID: 4671449148482649862}
   - component: {fileID: 4671449148482649977}
+  - component: {fileID: 740875505}
   m_Layer: 0
   m_Name: Bat
   m_TagString: bianfu
@@ -116,6 +117,27 @@ CapsuleCollider2D:
   m_Offset: {x: 0.009621966, y: -0.11450787}
   m_Size: {x: 2.3094316, y: 0.63746357}
   m_Direction: 1
+--- !u!50 &740875505
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4671449148482649978}
+  m_BodyType: 0
+  m_Simulated: 0
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &4671449148952498105
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,6 +200,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4671449149178886184}
   - component: {fileID: 4671449149178886185}
+  - component: {fileID: 738484282}
   m_Layer: 0
   m_Name: jump
   m_TagString: bianfujump
@@ -225,3 +248,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8919666, y: 0.03616011}
   m_EdgeRadius: 0
+--- !u!114 &738484282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4671449149178886186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 753edeeaef57d2c4b8580f57d2d5610c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
