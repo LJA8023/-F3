@@ -7,6 +7,11 @@ TagManager:
   - kaiguan
   - fanxiangqi
   - Car
+  - bianfu
+  - bianfujump
+  - panel_menu
+  - slider_sound
+  - panel_buttons
   layers:
   - Default
   - TransparentFX

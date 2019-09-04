@@ -11,10 +11,15 @@ public class menuUIControler : MonoBehaviour
     public Toggle tog_Sound = null;
     public AudioSource myAudio;
     public Animator panel_shezhimianban;
-    
+    public GameObject panel_buttons;
+    public GameObject panel_handle;
+    //public float TimeInterval = 1.0f;
+    //private float TimeStart = 0;
+    public GameObject panel_credits;
     public GameObject panel_menu;
+    bool judge = false;
     //public GameObject panel_menu;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,8 +30,8 @@ public class menuUIControler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
-        
+
+        //TimeStart += Time.deltaTime;
     }
     public void Play_Click()
     {
@@ -50,9 +55,25 @@ public class menuUIControler : MonoBehaviour
     }
     public void exit_Click()
     {
-
-        panel_menu.SetActive(true);
         panel_shezhimianban.SetBool("SlideIn", false);
-
+           panel_menu.SetActive(true);
+        
+    }
+    public void Credits_Click()
+    {
+        panel_buttons.SetActive(false);
+        panel_credits.SetActive(true);
+    }
+    public void handle_Click()
+    {
+        
+        panel_handle.SetActive(!judge);
+        judge = !judge;
+    }
+    public void creditsExit_Click()
+    {
+        panel_credits.SetActive(false);
+        panel_buttons.SetActive(true);
+       
     }
 }
