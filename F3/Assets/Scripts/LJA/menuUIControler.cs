@@ -52,13 +52,21 @@ public class menuUIControler : MonoBehaviour
        panel_menu.SetActive(false);
         panel_shezhimianban.enabled = true;
         panel_shezhimianban.SetBool("SlideIn", true);
-    }
-    public void exit_Click()
-    {
-        panel_shezhimianban.SetBool("SlideIn", false);
-           panel_menu.SetActive(true);
         
     }
+    public void panel_exit()
+    {
+        StartCoroutine(Test(1.5f));
+    }
+        IEnumerator Test(float waittime)
+        {
+             panel_shezhimianban.SetBool("SlideIn", false);
+            yield return new WaitForSeconds(waittime);
+            panel_menu.SetActive(true);
+        }
+          
+        
+    
     public void Credits_Click()
     {
         panel_buttons.SetActive(false);
