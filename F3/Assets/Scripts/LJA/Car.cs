@@ -6,6 +6,9 @@ public class Car : MonoBehaviour
 {
     private Rigidbody2D rig = null;
     public float Speed = 3.0f;
+    bool isCanMove = false;
+    public Animator wheel_1;
+    public Animator wheel_2;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,10 +18,25 @@ public class Car : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+       if (isCanMove == true)
+        {
+            
+             rig.AddForce( new Vector2(10.0f,0));
+        }
     }
     private void FixedUpdate()
     {
-        rig.velocity = new Vector2(Speed, rig.velocity.y);
+        
+       
+    }
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+          
+            isCanMove = true;
+            wheel_1.enabled = true;
+            wheel_2.enabled = true;
+        }
     }
 }
