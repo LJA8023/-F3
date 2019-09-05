@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChangeParent : MonoBehaviour
+public class BulletWall : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -10,8 +10,13 @@ public class ChangeParent : MonoBehaviour
         
     }
 
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
+        /*collision.gameObject.GetComponent<Rigidbody2D>()..velocity = new Vector2(0, 0);*/
     }
 }
