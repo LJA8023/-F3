@@ -20,7 +20,7 @@ public class fire_Particle : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.gameObject.CompareTag("Cat"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             fire.SetActive(false);
             Vector2 fire_Particle = new Vector2(transform.position.x, transform.position.y);
