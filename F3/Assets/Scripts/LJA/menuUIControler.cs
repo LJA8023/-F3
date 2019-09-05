@@ -62,7 +62,7 @@ public class menuUIControler : MonoBehaviour
         {
              panel_shezhimianban.SetBool("SlideIn", false);
             yield return new WaitForSeconds(waittime);
-            panel_menu.SetActive(true);
+            panel_menu.SetActive(true); 
         }
           
         
