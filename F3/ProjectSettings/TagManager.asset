@@ -12,6 +12,9 @@ TagManager:
   - panel_menu
   - slider_sound
   - panel_buttons
+  - shuihuodi_blue
+  - shuihuodi_green
+  - Cat
   layers:
   - Default
   - TransparentFX
