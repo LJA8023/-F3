@@ -12,6 +12,7 @@ TagManager:
   - panel_menu
   - slider_sound
   - panel_buttons
+  - huoqiu
   layers:
   - Default
   - TransparentFX
