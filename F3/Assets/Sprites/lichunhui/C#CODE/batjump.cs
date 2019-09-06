@@ -13,7 +13,7 @@ public class batjump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -21,7 +21,6 @@ public class batjump : MonoBehaviour
         gameObject.transform.parent.Find("Bat").GetComponent<Rigidbody2D>().simulated = true;
         gameObject.transform.parent.transform.eulerAngles = new Vector3(0, 0, 80.0f);
         gameObject.SetActive(false);
-        
     }
 
 }

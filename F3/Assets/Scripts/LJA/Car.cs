@@ -6,7 +6,7 @@ public class Car : MonoBehaviour
 {
     private Rigidbody2D rig = null;
     public float Speed = 3.0f;
-    bool isCanMove = false;
+    public bool isCanMove = false;
     public Animator wheel_1;
     public Animator wheel_2;
     // Start is called before the first frame update

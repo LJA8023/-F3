@@ -28,7 +28,6 @@ public class cat : MonoBehaviour
     {
        
     }
-    float m_timer = 0;
     private void FixedUpdate()
     {
         if(GetComponent<Transform>().position.y<=-5)
@@ -74,8 +73,14 @@ public class cat : MonoBehaviour
             jump = true;
         Cat.SetBool("chudi", true);
          }
-        m_timer = 0;
         Cat.SetBool("anjian", false);
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Car"))
+        {
+            //jump = false;
+        }
     }
     private void CatDead()
     {
