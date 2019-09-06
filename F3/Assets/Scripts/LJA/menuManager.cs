@@ -21,4 +21,16 @@ public class menuManager : MonoBehaviour
     {
         
     }
+    public void Btn_LCH()
+    {
+        SceneManager.LoadScene("LCH");
+    }
+    public void Btn_ZTS()
+    {
+        SceneManager.LoadScene("ZTS");
+    }
+    public void Btn_Lijiaao()
+    {
+        SceneManager.LoadScene("Game");
+    }
 }
