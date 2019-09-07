@@ -21,7 +21,7 @@ public class Car : MonoBehaviour
        if (isCanMove == true)
         {
             
-             rig.AddForce( new Vector2(10.0f,0));
+             rig.AddForce( new Vector2(8.0f,0));
         }
     }
     private void FixedUpdate()

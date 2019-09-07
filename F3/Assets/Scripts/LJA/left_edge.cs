@@ -27,5 +27,6 @@ public class left_edge : MonoBehaviour
         {
             edge = true;
         }
+
     }
 }
