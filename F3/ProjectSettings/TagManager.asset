@@ -13,6 +13,9 @@ TagManager:
   - slider_sound
   - panel_buttons
   - huoqiu
+  - shuihuodi_green
+  - shuihuodi_blue
+  - diamond
   layers:
   - Default
   - TransparentFX

@@ -2,33 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class guidaoTrigger : MonoBehaviour
+public class eatDiamond : MonoBehaviour
 {
-  
-   
-    public Collider2D Car_edge;
-    public Collider2D Wheel_left;
-    public Collider2D Wheel_right;
-    
+    public int Count ;
+    public AudioClip diamondCollect;
     // Start is called before the first frame update
     void Start()
     {
-      
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
-
-        Car_edge.enabled = false;
-        Wheel_left.enabled = false;
-        Wheel_right.enabled = false;
-
+         if (collision.gameObject.CompareTag("Player"))
+        {
+           AudioSource.PlayClipAtPoint(diamondCollect, Camera.main.transform.position);
+           Count++;
+        }
     }
 }
-    
-

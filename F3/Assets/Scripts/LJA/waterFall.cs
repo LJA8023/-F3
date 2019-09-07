@@ -22,7 +22,7 @@ public class waterFall : MonoBehaviour
         {
             if(water)
             {
-                Vector3 newWater = new Vector3(transform.position.x-0.07f,transform.position.y+0.1f,0);
+                Vector3 newWater = new Vector3(transform.position.x-0.03f,transform.position.y+0.05f,0);
               Instantiate(water, newWater, Quaternion.identity);
             } TimeStart = 0;
         }

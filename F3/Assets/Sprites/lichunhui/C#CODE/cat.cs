@@ -14,7 +14,7 @@ public class cat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cat = GetComponent<Animator>();
+        Cat = GetComponent<Animator >();
 
     }
 
