@@ -5,7 +5,7 @@ using UnityEngine;
 public class Car : MonoBehaviour
 {
     private Rigidbody2D rig = null;
-    public float Speed = 3.0f;
+    public float Speed = 10.0f;
     public bool isCanMove = false;
     public Animator wheel_1;
     public Animator wheel_2;
@@ -20,8 +20,9 @@ public class Car : MonoBehaviour
     {
        if (isCanMove == true)
         {
-            
-             rig.AddForce( new Vector2(8.0f,0));
+
+            // rig.AddForce( new Vector2(7.0f,0));
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(Speed, 0));
         }
     }
     private void FixedUpdate()
