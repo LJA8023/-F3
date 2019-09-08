@@ -16,6 +16,7 @@ TagManager:
   - shuihuodi_green
   - shuihuodi_blue
   - diamond
+  - tuijin
   layers:
   - Default
   - TransparentFX
