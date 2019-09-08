@@ -11,6 +11,7 @@ public class cat : MonoBehaviour
     private float ymax = 0.8f;//猫能跳跃的最大高度
     private bool jump;//是否在地面上；
     public  static bool Catisdead = false;
+    public Vector2 addli = new Vector2(0, 10);
     // Start is called before the first frame update
     void Start()
     {
@@ -44,7 +45,7 @@ public class cat : MonoBehaviour
             }
             else if(jump == true)
             {
-                    GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 10));      
+                    GetComponent<Rigidbody2D>().AddForce(addli);      
             }
         }
 
@@ -66,6 +67,7 @@ public class cat : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        jump = false;
         if(collision.gameObject.CompareTag("huoqiu"))
         {
             CatDead();
