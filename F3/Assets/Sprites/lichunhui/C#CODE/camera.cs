@@ -5,7 +5,7 @@ using UnityEngine;
 public class camera : MonoBehaviour
 {
     public Transform Cat;
-    private float distanceX =5f ;
+    public float distanceX =5f ;
     private float came_y ;
     // Start is called before the first frame update
     void Start()

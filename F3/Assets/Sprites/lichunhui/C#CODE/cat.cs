@@ -35,7 +35,7 @@ public class cat : MonoBehaviour
         {
             CatDead();
         }
-        if(Input.GetButton("Fire1")&&jump)
+        if(Input.GetButton("Fire1"))
         {
             Cat.SetBool("anjian",true);
             Cat.SetBool("chudi", false);
@@ -43,7 +43,7 @@ public class cat : MonoBehaviour
             {
                 jump = false;
             }
-            else if(jump == true)
+            else if(jump)
             {
                     GetComponent<Rigidbody2D>().AddForce(addli);      
             }
@@ -54,12 +54,11 @@ public class cat : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Bat")
+        if (collision.gameObject.CompareTag("huoqiu"))
         {
-            Debug.Log("dasd");
             CatDead();
         }
-       else if(collision.gameObject.CompareTag("bianfujump"))
+        else if(collision.gameObject.CompareTag("bianfujump"))
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
             GetComponent<Rigidbody2D>().AddForce(new Vector2(50, 100));
