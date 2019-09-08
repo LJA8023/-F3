@@ -6,7 +6,7 @@ using UnityEngine;
 public class cat : MonoBehaviour
 {
     private Animator Cat = null;
-    private Vector2 dead_get_li = new Vector2(-150.0f, 150.0f);//死亡加力
+    private Vector2 dead_get_li = new Vector2(-50f, 100f);//死亡加力
     private float y;//猫每次接触板子会记录一次当前y坐标
     private float ymax = 0.8f;//猫能跳跃的最大高度
     private bool jump;//是否在地面上；
@@ -84,8 +84,10 @@ public class cat : MonoBehaviour
     }
     private void CatDead()
     {
-        if(!Catisdead)
+
+            if (!Catisdead)
         {
+
             Cat.SetTrigger("isdead");
             GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
             GetComponent<Rigidbody2D>().AddForce(dead_get_li);
