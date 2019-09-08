@@ -190,6 +190,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 5
+  isCanMove: 0
   wheel_1: {fileID: 1847909364800682823}
   wheel_2: {fileID: 1847909365461547993}
 --- !u!68 &1847909363517763757
@@ -474,7 +475,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1847909364800684153}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 1ad134bfeb4341b4084d26952e2e67e2, type: 2}
   m_CullingMode: 0
@@ -591,7 +592,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1847909365142647010}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 844fb3c670aa71040ba7fc9318528d82, type: 2}
   m_CullingMode: 0

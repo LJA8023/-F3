@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Pause : MonoBehaviour
 {
+    public AudioClip pause_push;
     private eatDiamond eatDiamond = null;
     public Text Score;
     public GameObject Restart_Home;
@@ -27,6 +28,7 @@ public class Pause : MonoBehaviour
     }
     public void PauseGame()
     {
+        AudioSource.PlayClipAtPoint(pause_push, Camera.main.transform.position);
         paused = !paused;
         txt_Pause.SetActive(paused);
         Time.timeScale = paused ? 0 : 1;
