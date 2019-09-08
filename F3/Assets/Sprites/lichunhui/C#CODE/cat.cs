@@ -9,7 +9,7 @@ public class cat : MonoBehaviour
     private Vector2 dead_get_li = new Vector2(-30f, 80f);//死亡加力
     private float y;//猫每次接触板子会记录一次当前y坐标
     private float ymax = 0.8f;//猫能跳跃的最大高度
-    private bool jump;//是否在地面上；
+    public static bool jump;//是否在地面上；
     public  static bool Catisdead = false;
     public Vector2 addli = new Vector2(0, 10);
     // Start is called before the first frame update
@@ -31,11 +31,11 @@ public class cat : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if(GetComponent<Transform>().position.y<=-5)
+        if(GetComponent<Transform>().position.y<=-10)
         {
             CatDead();
         }
-        if(Input.GetButton("Fire1"))
+        if(Input.GetButton("Fire1")&&jump)
         {
             Cat.SetBool("anjian",true);
             Cat.SetBool("chudi", false);
@@ -80,13 +80,7 @@ public class cat : MonoBehaviour
          }
         Cat.SetBool("anjian", false);
     }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Car"))
-        {
-            //jump = false;
-        }
-    }
+        
     private void CatDead()
     {
 
