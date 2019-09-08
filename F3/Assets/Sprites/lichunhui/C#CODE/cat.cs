@@ -6,7 +6,7 @@ using UnityEngine;
 public class cat : MonoBehaviour
 {
     private Animator Cat = null;
-    private Vector2 dead_get_li = new Vector2(-50f, 100f);//死亡加力
+    private Vector2 dead_get_li = new Vector2(-30f, 80f);//死亡加力
     private float y;//猫每次接触板子会记录一次当前y坐标
     private float ymax = 0.8f;//猫能跳跃的最大高度
     private bool jump;//是否在地面上；
@@ -53,13 +53,12 @@ public class cat : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("bianfu")|| collision.gameObject.CompareTag("huoqiu"))
+        if (collision.gameObject.name == "Bat")
         {
+            Debug.Log("dasd");
             CatDead();
         }
-        
-        
-        if(collision.gameObject.CompareTag("bianfujump"))
+       else if(collision.gameObject.CompareTag("bianfujump"))
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
             GetComponent<Rigidbody2D>().AddForce(new Vector2(50, 100));
@@ -67,9 +66,13 @@ public class cat : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        y = transform.position.y;
+        if(collision.gameObject.CompareTag("huoqiu"))
+        {
+            CatDead();
+        }
         if(collision.gameObject.CompareTag("Car"))
        {
+            y = transform.position.y;
             jump = true;
         Cat.SetBool("chudi", true);
          }
