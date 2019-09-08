@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3101557862803462309}
   - component: {fileID: 3101557862803462310}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tex_eqlopot_png.rcc_000381
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3101557862940151301}
   - component: {fileID: 3101557862940151302}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tex_eqlopot_png.rcc_000363
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3101557862969068170}
   - component: {fileID: 3101557862969068171}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tex_eqlopot_png.rcc_000381 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -247,7 +247,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3101557863190947180}
   - component: {fileID: 3101557863190947181}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tex_eqlopot_png.rcc_000381 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3101557864335722957}
   - component: {fileID: 3101557864335722958}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tex_eqlopot_png.rcc_000363
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -405,7 +405,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3101557864561454783}
   - component: {fileID: 3101557864561454768}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tex_eqlopot_png.rcc_000373
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -484,7 +484,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3101557864761131213}
   - component: {fileID: 3101557864761131214}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tex_eqlopot_png.rcc_000381 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -563,7 +563,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3243134514660430725}
   - component: {fileID: 3243134514660430724}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tex_eqlopot_png.rcc_000165 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -642,7 +642,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3243134514740990619}
   - component: {fileID: 3243134514740990618}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tex_eqlopot_png.rcc_000165 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -721,7 +721,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3243134514972532812}
   - component: {fileID: 3243134514972532813}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: guidao4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -792,7 +792,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3243134515004052368}
   - component: {fileID: 3243134515004052383}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tex_eqlopot_png.rcc_000165 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -873,7 +873,7 @@ GameObject:
   - component: {fileID: 3243134515963532881}
   - component: {fileID: 435476807092909005}
   - component: {fileID: 435476807092909004}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: guidaobianyuan
   m_TagString: Finish
   m_Icon: {fileID: 0}
@@ -955,7 +955,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.23286903, y: 1.3635752}
+  m_Offset: {x: -0.40617466, y: 0.69433045}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -966,7 +966,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.14583802, y: 2.7998767}
+  m_Size: {x: 0.0001, y: 1.4613872}
   m_EdgeRadius: 0
 --- !u!114 &435476807092909004
 MonoBehaviour:
@@ -990,7 +990,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3243134516312605447}
   - component: {fileID: 3243134516312605446}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tex_eqlopot_png.rcc_000165
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1071,7 +1071,7 @@ GameObject:
   - component: {fileID: 3243134516552096092}
   - component: {fileID: 435476807811366088}
   - component: {fileID: 435476807811366087}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: guidaobianyuan2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1153,7 +1153,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.24463105, y: 0.8847611}
+  m_Offset: {x: 0.772696, y: 0.8513005}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1164,7 +1164,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16385221, y: 2.2169166}
+  m_Size: {x: 0.0001, y: 1.1238799}
   m_EdgeRadius: 0
 --- !u!114 &435476807811366087
 MonoBehaviour:
@@ -1188,7 +1188,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3243134516651292604}
   - component: {fileID: 3243134516651292603}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: tex_eqlopot_png.rcc_000165 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
