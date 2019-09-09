@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class eatDiamond : MonoBehaviour
 {
-    public int Count ;
+    public static int  Count=0 ;
     public AudioClip diamondCollect;
     // Start is called before the first frame update
     void Start()
