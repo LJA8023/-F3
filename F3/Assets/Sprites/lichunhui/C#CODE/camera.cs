@@ -17,7 +17,7 @@ public class camera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            if(!cat.Catisdead)
+            /*if(!cat.Catisdead)
             {
     if(Cat.transform.position.y>=0)
             {
@@ -28,7 +28,24 @@ public class camera : MonoBehaviour
                 came_y = 2.0f;
             }
         transform.position = new Vector3(Cat.position.x + distanceX, came_y, -10);
-        }
+          
+        }*/
         
+    }
+    private void LateUpdate()
+    {
+        if (!cat.Catisdead)
+        {
+            if (Cat.transform.position.y >= 0)
+            {
+                came_y = Cat.transform.position.y + 1;
+            }
+            else
+            {
+                came_y = 2.0f;
+            }
+            transform.position = new Vector3(Cat.position.x + distanceX, came_y, -10);
+
+        }
     }
 }
