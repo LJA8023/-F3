@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class menuUIControler : MonoBehaviour
 {
-    
+    public AudioClip UI_push;
     public Toggle tog_Sound = null;
     public AudioSource myAudio;
     public Animator panel_shezhimianban;
@@ -36,9 +36,11 @@ public class menuUIControler : MonoBehaviour
     public void Play_Click()
     {
         SceneManager.LoadScene("Menu");
+        AudioSource.PlayClipAtPoint(UI_push, Camera.main.transform.position);
     }
     public void Exit_Click()
     {
+        AudioSource.PlayClipAtPoint(UI_push, Camera.main.transform.position);
         UnityEditor.EditorApplication.isPlaying = false;
     }
     public void vol(float v)
@@ -49,13 +51,15 @@ public class menuUIControler : MonoBehaviour
     }
     public void Settings_Click()
     {
-       panel_menu.SetActive(false);
+        AudioSource.PlayClipAtPoint(UI_push, Camera.main.transform.position);
+        panel_menu.SetActive(false);
         panel_shezhimianban.enabled = true;
         panel_shezhimianban.SetBool("SlideIn", true);
         
     }
     public void panel_exit()
     {
+        AudioSource.PlayClipAtPoint(UI_push, Camera.main.transform.position);
         StartCoroutine(Test(1.5f));
     }
         IEnumerator Test(float waittime)
@@ -69,17 +73,19 @@ public class menuUIControler : MonoBehaviour
     
     public void Credits_Click()
     {
+        AudioSource.PlayClipAtPoint(UI_push, Camera.main.transform.position);
         panel_buttons.SetActive(false);
         panel_credits.SetActive(true);
     }
     public void handle_Click()
     {
-        
+        AudioSource.PlayClipAtPoint(UI_push, Camera.main.transform.position);
         panel_handle.SetActive(!judge);
         judge = !judge;
     }
     public void creditsExit_Click()
     {
+        AudioSource.PlayClipAtPoint(UI_push, Camera.main.transform.position);
         panel_credits.SetActive(false);
         panel_buttons.SetActive(true);
        

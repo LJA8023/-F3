@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class tuijin : MonoBehaviour
 {
+    public AudioClip Spring_push;
     public iTween.EaseType type;
     public Animator tui;
     public GameObject Cat;
@@ -22,7 +23,7 @@ public class tuijin : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D collision)
     {
          tui.enabled = true;
-       
+        AudioSource.PlayClipAtPoint(Spring_push, Camera.main.transform.position);
         Hashtable args = new Hashtable();
         args.Add("speed", 10.0f);
         args.Add("path", iTweenPath.GetPath("MyPath"));

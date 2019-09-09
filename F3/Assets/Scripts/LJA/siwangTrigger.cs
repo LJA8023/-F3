@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 public class siwangTrigger : MonoBehaviour
 {
     public AudioClip drop_water;
-    
+    public Text Score;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +31,9 @@ public class siwangTrigger : MonoBehaviour
     {
        
         yield return new WaitForSeconds(waittime);
-       SceneManager.LoadScene("Game");
+            eatDiamond.Count = 0;
+            Score.text = eatDiamond.Count.ToString();
+            SceneManager.LoadScene("Game");
     }        
     }
   
