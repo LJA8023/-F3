@@ -28,6 +28,7 @@ public class tuijin : MonoBehaviour
         args.Add("path", iTweenPath.GetPath("MyPath"));
         args.Add("easeType", type);
         iTween.MoveTo(Cat, args);
+        gameObject.GetComponent<Collider2D>().enabled=false;
     }
 
 

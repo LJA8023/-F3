@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class Pause : MonoBehaviour
 {
     public AudioClip pause_push;
+    public AudioClip restart_push;
+    public AudioClip Home_push;
     private eatDiamond eatDiamond = null;
     public Text Score;
     public GameObject Restart_Home;
@@ -37,10 +39,15 @@ public class Pause : MonoBehaviour
     }
     public void Home_Click()
     {
+        AudioSource.PlayClipAtPoint(restart_push, Camera.main.transform.position);
         SceneManager.LoadScene("Menu");
     }
     public void Restart_Click()
     {
+        AudioSource.PlayClipAtPoint(Home_push, Camera.main.transform.position);
+        eatDiamond.Count = 0;
+        Score.text = eatDiamond.Count.ToString();
         SceneManager.LoadScene("Game");
+        
     }
 }

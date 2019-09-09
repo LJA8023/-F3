@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 3783236138303461510}
   - component: {fileID: 3783236138303461511}
   m_Layer: 0
-  m_Name: "\u68CD"
+  m_Name: bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -284,6 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0738574123241d448b3729b1a4476712, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  open_door: {fileID: 8300000, guid: fe378d38a72c8154689d994692acb791, type: 3}
   kaiguan_red: {fileID: 3783236138316276748}
   kaiguan_green: {fileID: 3783236139424809489}
   door: {fileID: 3783236139054721937}
@@ -300,7 +301,7 @@ GameObject:
   - component: {fileID: 3783236139054721937}
   - component: {fileID: 3783236139054721943}
   m_Layer: 0
-  m_Name: "\u523A\u513F"
+  m_Name: ci
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

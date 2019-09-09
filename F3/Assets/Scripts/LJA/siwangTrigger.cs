@@ -4,10 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class siwangTrigger : MonoBehaviour
 {
+    public AudioClip drop_water;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -19,7 +21,16 @@ public class siwangTrigger : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Game");
+             AudioSource.PlayClipAtPoint(drop_water, Camera.main.transform.position);
+            StartCoroutine(Test(0.8f));
         }
+         
+          IEnumerator Test(float waittime)
+    {
+       
+        yield return new WaitForSeconds(waittime);
+       SceneManager.LoadScene("Game");
+    }        
     }
+  
 }

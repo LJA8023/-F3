@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class zhamen : MonoBehaviour
 {
+    public AudioClip open_door;
     public GameObject kaiguan_red;
     public GameObject kaiguan_green;
     public Animator door;
@@ -21,8 +22,8 @@ public class zhamen : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        
-          kaiguan_green.SetActive(true);
+        AudioSource.PlayClipAtPoint(open_door, Camera.main.transform.position);
+        kaiguan_green.SetActive(true);
           kaiguan_red.SetActive(false);
           door.enabled = true;
        
