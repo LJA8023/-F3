@@ -19,6 +19,10 @@ public class guidaobianyuan : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Car"))
         {
+            if(collision.gameObject.GetComponent<Rigidbody2D>())
+            {
+                collision.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+            }
             Destroy(collision.gameObject.GetComponent<Collider2D>());
             Destroy(collision.gameObject.GetComponent<carli>());
         }

@@ -183,7 +183,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!68 &4919891126439788028
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01258d7e7b308b74babb0de897bf6f4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 10
+  Speed: 8
   wheel_1: {fileID: 4919891127741314582}
   wheel_2: {fileID: 4919891127057905288}
 --- !u!1 &4919891126457816231
