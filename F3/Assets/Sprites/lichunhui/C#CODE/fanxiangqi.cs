@@ -26,7 +26,7 @@ public class fanxiangqi : MonoBehaviour
         if(collision.gameObject.CompareTag("Car"))
         {
 
-                car.flipX =!car.flipX;
+               // car.flipX =!car.flipX;
                 cat.flipX = !cat.flipX;
                 car.GetComponent<carli>().Speed = -car.GetComponent<carli>().Speed;
                 camera.GetComponent<camera>().distanceX = -camera.GetComponent<camera>().distanceX;
