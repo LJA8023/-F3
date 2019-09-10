@@ -48,6 +48,7 @@ public class Pause : MonoBehaviour
         eatDiamond.Count = 0;
         Score.text = eatDiamond.Count.ToString();
         SceneManager.LoadScene("Game");
+        Time.timeScale = 1;
         
     }
 }
