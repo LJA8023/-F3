@@ -28,7 +28,7 @@ public class menuManager : MonoBehaviour
     {
         AudioSource.PlayClipAtPoint(UI_push, Camera.main.transform.position);
         
-        SceneManager.LoadScene("LCH");
+        SceneManager.LoadScene("LCH1");
     }
     public void Btn_ZTS()
     {
