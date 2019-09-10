@@ -34,7 +34,7 @@ public class menuManager : MonoBehaviour
     {
         AudioSource.PlayClipAtPoint(UI_push, Camera.main.transform.position);
        
-        SceneManager.LoadScene("ZTS");
+        SceneManager.LoadScene("ZTS1");
     }
     public void Btn_Lijiaao()
     {
