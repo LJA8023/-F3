@@ -9,10 +9,12 @@ public class carli : MonoBehaviour
     private bool isCanMove = false;
     public Animator wheel_1;
     public Animator wheel_2;
+
     // Start is called before the first frame update
     void Start()
     {
         rig = gameObject.GetComponent<Rigidbody2D>();
+        
     }
 
     // Update is called once per frame
@@ -31,5 +33,6 @@ public class carli : MonoBehaviour
             wheel_1.enabled = true;
             wheel_2.enabled = true;
         }
+        
     }
 }

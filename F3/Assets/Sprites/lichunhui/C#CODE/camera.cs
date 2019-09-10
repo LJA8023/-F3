@@ -10,42 +10,28 @@ public class camera : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
 
     }
 
     // Update is called once per frame
     void Update()
     {
-            /*if(!cat.Catisdead)
-            {
-    if(Cat.transform.position.y>=0)
-            {
-               came_y = Cat.transform.position.y+1;
-            }
-         else
-            {
-                came_y = 2.0f;
-            }
-        transform.position = new Vector3(Cat.position.x + distanceX, came_y, -10);
-          
-        }*/
         
     }
     private void LateUpdate()
     {
         if (!cat.Catisdead)
         {
-            if (Cat.transform.position.y >= 0)
+            if (Cat.transform.position.y >= 5)
             {
                 came_y = Cat.transform.position.y + 1;
             }
             else
             {
-                came_y = 2.0f;
+                came_y = 6.0f;
             }
             transform.position = new Vector3(Cat.position.x + distanceX, came_y, -10);
-
+         
         }
     }
 }

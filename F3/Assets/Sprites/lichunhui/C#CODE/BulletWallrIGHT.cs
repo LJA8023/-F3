@@ -7,7 +7,6 @@ public class BulletWallrIGHT : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -23,6 +22,7 @@ public class BulletWallrIGHT : MonoBehaviour
     {
         if (Input.GetButton("Fire1"))
         {
+           
             collision.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
             collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(50, 100));
             collision.GetComponent<SpriteRenderer>().flipX = false;
