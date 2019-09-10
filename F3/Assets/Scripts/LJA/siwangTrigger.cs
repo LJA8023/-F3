@@ -33,6 +33,7 @@ public class siwangTrigger : MonoBehaviour
         yield return new WaitForSeconds(waittime);
             eatDiamond.Count = 0;
             Score.text = eatDiamond.Count.ToString();
+            cat.Catisdead = false;
             SceneManager.LoadScene("Game");
     }        
     }

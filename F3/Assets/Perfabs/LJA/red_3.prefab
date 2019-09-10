@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5512847342008999623}
   m_Layer: 0
   m_Name: red_fire (2)
-  m_TagString: huoqiu
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -196,7 +196,7 @@ GameObject:
   - component: {fileID: 5512847342706728494}
   m_Layer: 0
   m_Name: red_fire (3)
-  m_TagString: huoqiu
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -375,7 +375,7 @@ GameObject:
   - component: {fileID: 5512847343617364135}
   m_Layer: 0
   m_Name: red_fire (1)
-  m_TagString: huoqiu
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
