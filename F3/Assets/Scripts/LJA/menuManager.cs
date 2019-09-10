@@ -28,13 +28,13 @@ public class menuManager : MonoBehaviour
     {
         AudioSource.PlayClipAtPoint(UI_push, Camera.main.transform.position);
         
-        SceneManager.LoadScene("LCH1");
+        SceneManager.LoadScene("LCH");
     }
     public void Btn_ZTS()
     {
         AudioSource.PlayClipAtPoint(UI_push, Camera.main.transform.position);
        
-        SceneManager.LoadScene("ZTS1");
+        SceneManager.LoadScene("ZTS");
     }
     public void Btn_Lijiaao()
     {

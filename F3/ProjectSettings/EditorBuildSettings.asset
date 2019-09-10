@@ -11,22 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 7663ecd50a33da94081800450615af82
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: bcd120ce9a8430a4dad7744aae14293e
   - enabled: 1
     path: Assets/Scenes/LCH.unity
     guid: 0a9f0e47abd27304b93a7a3b9d82f6eb
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/Scenes/ZTS.unity
-    guid: 6556fed55f97de547b5c4628cf486451
   - enabled: 1
-    path: Assets/Scenes/ZTS 1.unity
+    path: Assets/Scenes/ZTS.unity
     guid: b4245ee477c2b09469de8a13102ca7dc
   m_configObjects: {}
