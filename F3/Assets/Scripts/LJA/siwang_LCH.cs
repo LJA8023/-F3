@@ -35,6 +35,8 @@ public class siwang_LCH : MonoBehaviour
             Score.text = eatDiamond.Count.ToString();
             cat.Catisdead = false;
             SceneManager.LoadScene("LCH");
+            
+            
             Time.timeScale = 1;
         }
     }

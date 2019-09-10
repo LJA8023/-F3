@@ -4347,6 +4347,20 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7145232835668776673}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &619961660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619961659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcb670573aae3eb4bbe1797a268f9f57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Score: {fileID: 335728964}
+  addli: {x: 0, y: 10}
 --- !u!61 &619961664
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16735,7 +16749,13 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.35
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8317352494768541937, guid: 209272f975bf91f4284ff388f44f17b4,
+        type: 3}
+      propertyPath: Score
+      value: 
+      objectReference: {fileID: 335728964}
+    m_RemovedComponents:
+    - {fileID: 8317352494768541937, guid: 209272f975bf91f4284ff388f44f17b4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 209272f975bf91f4284ff388f44f17b4, type: 3}
 --- !u!1 &8317352494325027727 stripped
 GameObject:
