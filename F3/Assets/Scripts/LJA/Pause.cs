@@ -30,6 +30,7 @@ public class Pause : MonoBehaviour
     }
     public void PauseGame()
     {
+        Debug.Log("Yes");
         AudioSource.PlayClipAtPoint(pause_push, Camera.main.transform.position);
         paused = !paused;
         txt_Pause.SetActive(paused);
@@ -40,13 +41,17 @@ public class Pause : MonoBehaviour
     public void Home_Click()
     {
         AudioSource.PlayClipAtPoint(restart_push, Camera.main.transform.position);
+        eatDiamond.Count = 0;
+        Score.text = eatDiamond.Count.ToString();
         SceneManager.LoadScene("Menu");
     }
     public void Restart_Click()
     {
+
         AudioSource.PlayClipAtPoint(Home_push, Camera.main.transform.position);
         eatDiamond.Count = 0;
         Score.text = eatDiamond.Count.ToString();
+        cat.Catisdead = false;
         SceneManager.LoadScene("Game");
         Time.timeScale = 1;
         

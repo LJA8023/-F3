@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5421761366573962081}
   - component: {fileID: 5421761366573962082}
   - component: {fileID: 5421761366573962083}
-  - component: {fileID: 5421761366573962084}
   m_Layer: 0
   m_Name: GameUIManager
   m_TagString: Untagged
@@ -81,14 +80,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pause_push: {fileID: 8300000, guid: a90d5eb3cf1f7e94db2b95eecaab42fa, type: 3}
+  restart_push: {fileID: 0}
+  Home_push: {fileID: 0}
   Score: {fileID: 0}
   Restart_Home: {fileID: 0}
   txt_Pause: {fileID: 0}
---- !u!81 &5421761366573962084
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5421761366573962111}
-  m_Enabled: 1

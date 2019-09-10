@@ -25,7 +25,7 @@ public class tuijin : MonoBehaviour
          tui.enabled = true;
         AudioSource.PlayClipAtPoint(Spring_push, Camera.main.transform.position);
         Hashtable args = new Hashtable();
-        args.Add("speed", 10.0f);
+        args.Add("speed",25.0f);
         args.Add("path", iTweenPath.GetPath("MyPath"));
         args.Add("easeType", type);
         iTween.MoveTo(Cat, args);
