@@ -85,7 +85,6 @@ public class cat : MonoBehaviour
 
             if (!Catisdead)
         {
-
             Cat.SetTrigger("isdead");
             GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
             GetComponent<Rigidbody2D>().AddForce(dead_get_li);
