@@ -41,7 +41,8 @@ public class menuUIControler : MonoBehaviour
     public void Exit_Click()
     {
         AudioSource.PlayClipAtPoint(UI_push, Camera.main.transform.position);
-        UnityEditor.EditorApplication.isPlaying = false;
+        //UnityEditor.EditorApplication.isPlaying = false;
+        Application.Quit();
     }
     public void vol(float v)
     {
