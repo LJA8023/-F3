@@ -30,8 +30,6 @@ public class camera : MonoBehaviour
             {
                 came_y = 6.0f;
             }
-            transform.position = new Vector3(Cat.position.x + distanceX, came_y, -10);
-         
-        }
+            transform.position = new Vector3(Cat.position.x + distanceX, came_y, -10);        }
     }
 }
