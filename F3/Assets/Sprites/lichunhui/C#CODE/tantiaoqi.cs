@@ -23,8 +23,8 @@ public class tantiaoqi : MonoBehaviour
        
         if (collision.gameObject.CompareTag("Player"))
         {
-           // collision.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
-            //Destroy(gameObject.GetComponent<Collider2D>());
+           //collision.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+            Destroy(gameObject.GetComponent<Collider2D>());
             Hashtable args = new Hashtable();
             args.Add("speed", tanspeed);
             args.Add("path", iTweenPath.GetPath("path"));
